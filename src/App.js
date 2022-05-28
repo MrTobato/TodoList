@@ -31,7 +31,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h1>Количество задач: {todos.length}</h1>
+        <h1>Список задач: {todos.length}</h1>
       </div>
       <TodoForm addTask={addTask} />
       {todos.map((todo) => {
@@ -42,6 +42,7 @@ function App() {
             todo={todo}
             toggleTask={handleToggle}
             removeTask={removeTask}
+            complete={todo.complete}
           />
         );
       })}

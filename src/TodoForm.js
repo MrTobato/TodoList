@@ -26,7 +26,7 @@ function TodoForm({ addTask }) {
           type="text"
           value={state}
           onChange={handleChange}
-          placeholder="Что сделаешь?.."
+          placeholder="Напиши задачу..."
           onKeyDown={handleKeyPress}
         ></input>
       </div>

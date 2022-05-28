@@ -19,21 +19,42 @@ code {
   flex-direction: column;
 
   font-family: 'Times New Roman', Times, serif;
+  text-align: center;
 }
 
 form {
   display: flex;
+  justify-content: center;
   margin-bottom: 10px;
   width: 300px;
 }
 
 input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 5px 0 0 5px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+
   font-size: 18px;
   height: 20px;
 }
 
 .add-btn {
-  height: 26px;
+  height: 52px;
+  padding: 16px 7px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
 }
 
 .item-todo {
@@ -42,19 +63,32 @@ input {
   align-items: center;
   width: 300px;
 
-  background-color:bisque;
-  margin: 3px;
-  padding: 5px;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 14px;
+  margin-top: 15px;
 
   font-size: 20px;
+  text-align: left;
 }
 
-.strikeOut {
+.task {
   word-break: break-all;
 }
 
+.strikeOut {
+  text-decoration: line-through;
+}
+
 .btn-del {
-  margin-left: 10px;
+  margin: 0px 10px;
 }
 
 

@@ -1,12 +1,13 @@
 //Рендер элемента с задачей.
-function Todo({ todo, toggleTask, removeTask }) {
+function Todo({ todo, toggleTask, removeTask, complete }) {
   //Деструктурирующее присваивание, можно через props по классике
   return (
     <div key={todo.id} className="item-todo">
       <div
-        className="strikeOut"
+        className={complete ? "task strikeOut" : "task"}
         onClick={() => {
           toggleTask(todo.id);
+          complete = !complete;
         }}
       >
         {todo.task}
